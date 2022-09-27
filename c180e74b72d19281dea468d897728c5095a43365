@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dab45ed6_a6be813e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000488
+      },
+      "writtenOn": "2022-09-27T13:51:27Z",
+      "side": 1,
+      "message": "should go to vendor/etc/sensors for the HAL to read it",
+      "revId": "c180e74b72d19281dea468d897728c5095a43365",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
