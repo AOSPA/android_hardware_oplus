@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.lineageos.settings.device
+package co.aospa.settings.device
 
 import android.os.Bundle
 import android.view.MenuItem
