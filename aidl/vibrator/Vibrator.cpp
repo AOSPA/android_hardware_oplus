@@ -1,5 +1,6 @@
 /*
  * Copyright (c) 2018-2021, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2022, Qualcomm Innovation Center, Inc. All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are
@@ -36,6 +37,7 @@
 #include <log/log.h>
 #include <string.h>
 #include <sys/ioctl.h>
+#include <fcntl.h>
 #include <thread>
 
 #include "include/Vibrator.h"
@@ -61,6 +63,10 @@ namespace vibrator {
 #define MSM_CPU_SM8325          501
 #define APQ_CPU_SM8325P         502
 #define MSM_CPU_YUPIK           475
+#define MSM_CPU_CAPE            530
+#define APQ_CPU_CAPE            531
+#define MSM_CPU_TARO            457
+#define MSM_CPU_TARO_LTE        552
 
 #define test_bit(bit, array)    ((array)[(bit)/8] & (1<<((bit)%8)))
 
@@ -145,7 +151,11 @@ InputFFDevice::InputFFDevice()
             case MSM_CPU_SHIMA:
             case MSM_CPU_SM8325:
             case APQ_CPU_SM8325P:
+            case MSM_CPU_TARO:
+            case MSM_CPU_TARO_LTE:
             case MSM_CPU_YUPIK:
+            case MSM_CPU_CAPE:
+            case APQ_CPU_CAPE:
                 mSupportExternalControl = true;
                 break;
             default:
@@ -412,7 +422,6 @@ ndk::ScopedAStatus Vibrator::getCapabilities(int32_t* _aidl_return) {
     *_aidl_return = IVibrator::CAP_ON_CALLBACK;
 
     if (ledVib.mDetected) {
-        *_aidl_return |= IVibrator::CAP_PERFORM_CALLBACK;
         ALOGD("QTI Vibrator reporting capabilities: %d", *_aidl_return);
         return ndk::ScopedAStatus::ok();
     }
@@ -511,21 +520,17 @@ ndk::ScopedAStatus Vibrator::perform(Effect effect, EffectStrength es, const std
         // Return magic value for play length so that we won't end up calling on() / off()
         playLengthMs = 150;
     } else {
-#ifdef TARGET_SUPPORTS_OFFLOAD
-        if (effect < Effect::CLICK ||  effect > Effect::RINGTONE_15)
-#else
-        if (effect < Effect::CLICK ||  effect > Effect::HEAVY_CLICK)
-#endif
-            return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_UNSUPPORTED_OPERATION));
 
-        if (es != EffectStrength::LIGHT && es != EffectStrength::MEDIUM &&
-                es != EffectStrength::STRONG)
-            return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_UNSUPPORTED_OPERATION));
+    if (effect < Effect::CLICK ||
+            effect > Effect::HEAVY_CLICK)
+        return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_UNSUPPORTED_OPERATION));
 
-        ret = ff.playEffect((static_cast<int>(effect)), es, &playLengthMs);
-        if (ret != 0)
-            return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_SERVICE_SPECIFIC));
-    }
+    if (es != EffectStrength::LIGHT && es != EffectStrength::MEDIUM && es != EffectStrength::STRONG)
+        return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_UNSUPPORTED_OPERATION));
+
+    ret = ff.playEffect((static_cast<int>(effect)), es, &playLengthMs);
+    if (ret != 0)
+        return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_SERVICE_SPECIFIC));
 
     if (callback != nullptr) {
         std::thread([=] {
@@ -544,15 +549,10 @@ ndk::ScopedAStatus Vibrator::getSupportedEffects(std::vector<Effect>* _aidl_retu
     if (ledVib.mDetected) {
         *_aidl_return = {Effect::CLICK, Effect::DOUBLE_CLICK, Effect::HEAVY_CLICK};
     } else {
-#ifdef TARGET_SUPPORTS_OFFLOAD
-        *_aidl_return = {Effect::CLICK, Effect::DOUBLE_CLICK, Effect::TICK, Effect::THUD,
-                         Effect::POP, Effect::HEAVY_CLICK, Effect::RINGTONE_12,
-                         Effect::RINGTONE_13, Effect::RINGTONE_14, Effect::RINGTONE_15};
-#else
-        *_aidl_return = {Effect::CLICK, Effect::DOUBLE_CLICK, Effect::TICK, Effect::THUD,
-                         Effect::POP, Effect::HEAVY_CLICK};
-#endif
-    }
+    *_aidl_return = {Effect::CLICK, Effect::DOUBLE_CLICK, Effect::TICK, Effect::THUD,
+                     Effect::POP, Effect::HEAVY_CLICK};
+  }
+
     return ndk::ScopedAStatus::ok();
 }
 
@@ -623,6 +623,43 @@ ndk::ScopedAStatus Vibrator::alwaysOnEnable(int32_t id __unused, Effect effect _
 }
 
 ndk::ScopedAStatus Vibrator::alwaysOnDisable(int32_t id __unused) {
+    return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_UNSUPPORTED_OPERATION));
+}
+
+ndk::ScopedAStatus Vibrator::getResonantFrequency(float *resonantFreqHz __unused) {
+    return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_UNSUPPORTED_OPERATION));
+}
+
+ndk::ScopedAStatus Vibrator::getQFactor(float *qFactor __unused) {
+    return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_UNSUPPORTED_OPERATION));
+}
+
+ndk::ScopedAStatus Vibrator::getFrequencyResolution(float *freqResolutionHz __unused) {
+    return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_UNSUPPORTED_OPERATION));
+}
+
+ndk::ScopedAStatus Vibrator::getFrequencyMinimum(float *freqMinimumHz __unused) {
+    return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_UNSUPPORTED_OPERATION));
+}
+
+ndk::ScopedAStatus Vibrator::getBandwidthAmplitudeMap(std::vector<float> *_aidl_return __unused) {
+    return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_UNSUPPORTED_OPERATION));
+}
+
+ndk::ScopedAStatus Vibrator::getPwlePrimitiveDurationMax(int32_t *durationMs __unused) {
+    return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_UNSUPPORTED_OPERATION));
+}
+
+ndk::ScopedAStatus Vibrator::getPwleCompositionSizeMax(int32_t *maxSize __unused) {
+    return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_UNSUPPORTED_OPERATION));
+}
+
+ndk::ScopedAStatus Vibrator::getSupportedBraking(std::vector<Braking> *supported __unused) {
+    return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_UNSUPPORTED_OPERATION));
+}
+
+ndk::ScopedAStatus Vibrator::composePwle(const std::vector<PrimitivePwle> &composite __unused,
+                           const std::shared_ptr<IVibratorCallback> &callback __unused) {
     return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_UNSUPPORTED_OPERATION));
 }
 
