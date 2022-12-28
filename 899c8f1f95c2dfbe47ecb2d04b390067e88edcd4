@@ -71,6 +71,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "ea1918bb_96353550",
+        "filename": "sepolicy/qti/vendor/file_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1000541
+      },
+      "writtenOn": "2022-12-28T17:54:13Z",
+      "side": 1,
+      "message": "op7 currently has it though im not sure if it\u0027s needed\n\nif grep -q simcardnum.doublesim\u003d1 /proc/cmdline; then\n    setprop vendor.radio.multisim.config dsds\nfi",
+      "parentUuid": "ea18ebc2_9917a532",
+      "revId": "899c8f1f95c2dfbe47ecb2d04b390067e88edcd4",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "4339d397_2cf29d1d",
         "filename": "sepolicy/qti/vendor/file_contexts",
         "patchSetId": 1
