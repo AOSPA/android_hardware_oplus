@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9ac612bd_20cd5bed",
+        "filename": "sepolicy/qti/vendor/file_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1000488
+      },
+      "writtenOn": "2022-12-28T14:03:42Z",
+      "side": 1,
+      "message": "change it to aospa",
+      "revId": "899c8f1f95c2dfbe47ecb2d04b390067e88edcd4",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "04bc5fc8_f970ca96",
+        "filename": "sepolicy/qti/vendor/file_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1000488
+      },
+      "writtenOn": "2022-12-28T14:03:42Z",
+      "side": 1,
+      "message": "not needed",
+      "revId": "899c8f1f95c2dfbe47ecb2d04b390067e88edcd4",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ea18ebc2_9917a532",
+        "filename": "sepolicy/qti/vendor/file_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1000488
+      },
+      "writtenOn": "2022-12-28T14:03:42Z",
+      "side": 1,
+      "message": "do we have this on other devices? op9 doesnt",
+      "revId": "899c8f1f95c2dfbe47ecb2d04b390067e88edcd4",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4339d397_2cf29d1d",
+        "filename": "sepolicy/qti/vendor/file_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1000488
+      },
+      "writtenOn": "2022-12-28T14:03:42Z",
+      "side": 1,
+      "message": "not needed",
+      "revId": "899c8f1f95c2dfbe47ecb2d04b390067e88edcd4",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
