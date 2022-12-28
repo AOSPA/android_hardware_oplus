@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "3c46ceeb_c53e7d82",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000488
+      },
+      "writtenOn": "2022-12-28T14:04:57Z",
+      "side": 1,
+      "message": "https://github.com/gotenksIN/hardware_oplus/commit/75a98391ad842623ff1dacd534b862c8c9f2733a might wanna look here",
+      "revId": "899c8f1f95c2dfbe47ecb2d04b390067e88edcd4",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "9ac612bd_20cd5bed",
