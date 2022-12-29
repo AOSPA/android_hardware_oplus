@@ -87,6 +87,24 @@
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "72db4847_ad7eac1b",
+        "filename": "sepolicy/qti/vendor/file_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1000498
+      },
+      "writtenOn": "2022-12-29T14:25:14Z",
+      "side": 1,
+      "message": "\u003e op7 currently has it though im not sure if it\u0027s needed\n\u003e \n\u003e if grep -q simcardnum.doublesim\u003d1 /proc/cmdline; then\n\u003e     setprop vendor.radio.multisim.config dsds\n\u003e fi\n\nIt\u0027s needed on Realme SM8250 devices, bladerunner have some single sim units",
+      "parentUuid": "ea1918bb_96353550",
+      "revId": "899c8f1f95c2dfbe47ecb2d04b390067e88edcd4",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "4339d397_2cf29d1d",
