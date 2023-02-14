@@ -52,6 +52,24 @@
       "parentUuid": "a91d3c0e_59286028",
       "revId": "c9c91daf82e94bf9a6ae84ecfa73da7e415d2fc1",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "26d29bde_8fca5bdf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000498
+      },
+      "writtenOn": "2023-02-14T19:39:30Z",
+      "side": 1,
+      "message": "Why would I ? It\u0027s not a property specific to nq nfc",
+      "parentUuid": "09ed8547_9a2cfc5b",
+      "revId": "c9c91daf82e94bf9a6ae84ecfa73da7e415d2fc1",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
