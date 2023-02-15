@@ -70,6 +70,24 @@
       "parentUuid": "09ed8547_9a2cfc5b",
       "revId": "c9c91daf82e94bf9a6ae84ecfa73da7e415d2fc1",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dc560e1b_7d11ba62",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000579
+      },
+      "writtenOn": "2023-02-15T06:57:44Z",
+      "side": 1,
+      "message": "neither is vendor.oplus.nfc.fw.version, its just labelled that way for ease",
+      "parentUuid": "26d29bde_8fca5bdf",
+      "revId": "c9c91daf82e94bf9a6ae84ecfa73da7e415d2fc1",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
