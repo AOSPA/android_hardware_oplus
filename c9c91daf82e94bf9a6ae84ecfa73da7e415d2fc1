@@ -88,6 +88,24 @@
       "parentUuid": "26d29bde_8fca5bdf",
       "revId": "c9c91daf82e94bf9a6ae84ecfa73da7e415d2fc1",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5a025f75_a3e24cbc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000579
+      },
+      "writtenOn": "2023-02-15T06:58:22Z",
+      "side": 1,
+      "message": "#ifdef OPLUS_ARCH_NFC\n#Liuwenjie@Connectivity.NFC.Basic.674419, 2020/12/01, Add for: Add for:set firmware version to property\nvendor.oplus.nfc.fw.version  u:object_r:vendor_nfc_se_prop:s0\n#endif OPLUS_ARCH_NFC\n\nfor context",
+      "parentUuid": "dc560e1b_7d11ba62",
+      "revId": "c9c91daf82e94bf9a6ae84ecfa73da7e415d2fc1",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
