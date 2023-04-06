@@ -16,6 +16,23 @@
       "message": "Proper fix instead of:\nhttps://gerrit.aospa.co/c/AOSPA/android_device_qcom_sepolicy_vndr/+/28604?usp\u003ddashboard",
       "revId": "e841eec18891cfbabf7f4a27a99e1db2190ac67a",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0c291a06_e67e803a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000012
+      },
+      "writtenOn": "2023-04-06T17:55:13Z",
+      "side": 1,
+      "message": "this isn\u0027t happening on other devices, do we need to remove Kona policies from vndr or something?",
+      "revId": "e841eec18891cfbabf7f4a27a99e1db2190ac67a",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
