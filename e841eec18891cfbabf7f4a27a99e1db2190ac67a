@@ -33,6 +33,24 @@
       "message": "this isn\u0027t happening on other devices, do we need to remove Kona policies from vndr or something?",
       "revId": "e841eec18891cfbabf7f4a27a99e1db2190ac67a",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "08428bee_9dc85104",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000843
+      },
+      "writtenOn": "2023-04-06T17:58:00Z",
+      "side": 1,
+      "message": "I think that moved to common in vndr, so removing it from hw/oplus made more sense to me",
+      "parentUuid": "0c291a06_e67e803a",
+      "revId": "e841eec18891cfbabf7f4a27a99e1db2190ac67a",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
