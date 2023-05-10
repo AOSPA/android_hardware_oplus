@@ -42,7 +42,7 @@
 
 #include "include/Vibrator.h"
 #ifdef USE_EFFECT_STREAM
-#include "effect.h"
+#include "effect/effect.h"
 #endif
 
 namespace aidl {
