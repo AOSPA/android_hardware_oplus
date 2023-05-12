@@ -35,5 +35,8 @@ type vendor_sysfs_tof, fs_type, sysfs_type;
 # Ultrasound
 type vendor_proc_ultrasound, fs_type, proc_type;
 
+# UFS
+type vendor_proc_oplus_ufs, fs_type, proc_type;
+
 # Versioning
 type vendor_proc_oplus_version, fs_type, proc_type;
