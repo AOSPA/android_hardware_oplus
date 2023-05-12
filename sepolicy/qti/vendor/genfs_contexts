@@ -49,6 +49,9 @@ genfscon sysfs /module/stmvl53l1      u:object_r:vendor_sysfs_tof:s0
 # Ultrasound
 genfscon proc /ultrasound    u:object_r:vendor_proc_ultrasound:s0
 
+# UFS
+gensfcon proc /devinfo/ufs    u:object_r:vendor_proc_oplus_ufs:s0
+
 # Versioning
 genfscon proc /oplusVersion    u:object_r:vendor_proc_oplus_version:s0
 genfscon proc /oppoVersion     u:object_r:vendor_proc_oplus_version:s0
