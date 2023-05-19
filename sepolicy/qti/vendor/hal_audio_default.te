@@ -1,1 +1,2 @@
 allow hal_audio_default ultrasound_device:chr_file rw_file_perms;
+allow hal_audio_default vendor_hal_performance_hwservice:hwservice_manager find;
