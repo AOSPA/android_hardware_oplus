@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "83bf8efc_ea445c4d",
+        "filename": "sepolicy/qti/SEPolicy.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1000579
+      },
+      "writtenOn": "2023-11-03T12:43:42Z",
+      "side": 1,
+      "message": "do the other way around, otherwise you\u0027ll have to keep on adding new platforms",
+      "revId": "68c7257136f50ce74fa797e8dba693140d98a89a",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
