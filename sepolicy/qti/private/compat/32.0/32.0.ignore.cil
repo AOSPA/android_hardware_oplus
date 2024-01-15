@@ -8,5 +8,4 @@
     system_fingerprint_prop
     system_oplus_iris_prop
     system_oplus_project_prop
-    vendor_persist_engineer_file
-    vendor_sysfs_dc_dim))
+    vendor_persist_engineer_file))
