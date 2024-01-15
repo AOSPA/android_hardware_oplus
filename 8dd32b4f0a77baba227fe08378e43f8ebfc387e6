@@ -16,6 +16,23 @@
       "message": "Wouldn\u0027t \"oplus: sepolicy: Checkout to LineageOS.\" make more sense?",
       "revId": "8dd32b4f0a77baba227fe08378e43f8ebfc387e6",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "54ebe28e_8269732e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000498
+      },
+      "writtenOn": "2024-01-15T13:43:45Z",
+      "side": 1,
+      "message": "Would be nice to keep our change too",
+      "revId": "8dd32b4f0a77baba227fe08378e43f8ebfc387e6",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
