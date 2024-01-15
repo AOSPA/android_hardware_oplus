@@ -7,13 +7,15 @@ oppo.camera.                     u:object_r:exported_system_prop:s0
 persist.sys.camera.lao.enable    u:object_r:exported_system_prop:s0
 
 # Display
-persist.sys.display.iris.absent   u:object_r:system_oplus_iris_prop:s0
+persist.sys.display.iris.absent    u:object_r:system_oplus_iris_prop:s0
+ro.oplus.display.                  u:object_r:exported_system_prop:s0
+
+# Engineering
+ro.oplus.image.my_engineering.type    u:object_r:exported_system_prop:s0
 
 # Fingerprint
-gf.debug.               u:object_r:system_fingerprint_prop:s0
-oplus.fingerprint.      u:object_r:system_fingerprint_prop:s0
-oplus.optical.goodix.fp u:object_r:system_fingerprint_prop:s0
-ro.boot.flash.locked    u:object_r:exported_system_prop:s0
+oplus.fingerprint.    u:object_r:system_fingerprint_prop:s0
+oplus.optical.        u:object_r:system_fingerprint_prop:s0
 
 # Logging
 persist.camera.assert.panic         u:object_r:exported_system_prop:s0
@@ -28,8 +30,13 @@ persist.sys.log.awb                 u:object_r:exported_system_prop:s0
 # Modem
 persist.sys.enable_modem_dump    u:object_r:exported_system_prop:s0
 
+# Performance
+sys.oplus.high.performance    u:object_r:exported_system_prop:s0
+
 # Radio
+ro.build.display.full_id    u:object_r:exported_system_prop:s0
 ro.sys.reserve.integrate    u:object_r:exported_system_prop:s0
+sys.oplus_boot_mode         u:object_r:exported_system_prop:s0
 
 # SVN
 ro.build.version.svn      u:object_r:exported_system_prop:s0
