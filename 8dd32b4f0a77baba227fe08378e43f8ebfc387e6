@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dd64a5aa_3bf21f2b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000143
+      },
+      "writtenOn": "2024-01-15T10:43:29Z",
+      "side": 1,
+      "message": "Wouldn\u0027t \"oplus: sepolicy: Checkout to LineageOS.\" make more sense?",
+      "revId": "8dd32b4f0a77baba227fe08378e43f8ebfc387e6",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
