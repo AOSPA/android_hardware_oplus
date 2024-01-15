@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
-ifeq ($(SEPOLICY_PATH), device/qcom/sepolicy_vndr-legacy-um)
+ifneq ($(call is-board-platform-in-list,$(6_1_FAMILY) $(5_15_FAMILY) $(5_10_FAMILY)),true)
     SEPOLICY_PLATFORM := legacy-um
 else
     SEPOLICY_PLATFORM := um
