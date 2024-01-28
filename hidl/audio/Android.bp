@@ -2,6 +2,7 @@ cc_library {
     name: "libshims_ozoc2store",
     srcs: ["OZOC2StoreShim.cpp"],
     shared_libs: ["libcodec2", "libcodec2_vndk"],
+    compile_multilib: "32",
     device_specific: true,
 }
 
