@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ca501c9e_4f8f78cb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000498
+      },
+      "writtenOn": "2024-03-16T09:23:22Z",
+      "side": 1,
+      "message": "Not sure if you want that to be actually merged if it required kernel dts to be modified",
+      "revId": "ec133655ca6388c8a44df84a57e086c8e9298f5e",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
