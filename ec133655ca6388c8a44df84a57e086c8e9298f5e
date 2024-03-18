@@ -16,6 +16,24 @@
       "message": "Not sure if you want that to be actually merged if it required kernel dts to be modified",
       "revId": "ec133655ca6388c8a44df84a57e086c8e9298f5e",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "75a2d22b_9beae628",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000488
+      },
+      "writtenOn": "2024-03-18T05:33:55Z",
+      "side": 1,
+      "message": "I don\u0027t really mind it honestly. But will test before we get this merged anyways. Thanks for letting me know Elias!",
+      "parentUuid": "ca501c9e_4f8f78cb",
+      "revId": "ec133655ca6388c8a44df84a57e086c8e9298f5e",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
