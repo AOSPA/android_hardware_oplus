@@ -90,6 +90,7 @@
 # Reserve
 /dev/block/platform/soc/1d84000\.ufshc/by-name/oplusreserve[1-5]    u:object_r:vendor_reserve_partition:s0
 /dev/block/platform/soc/4804000\.ufshc/by-name/oplusreserve[1-5]    u:object_r:vendor_reserve_partition:s0
+/mnt/vendor/oplusreserve(/.*)?                                      u:object_r:vendor_reserve_file:s0
 
 # Sensors
 /(odm|vendor/odm)/bin/hw/vendor\.oplus\.hardware\.oplusSensor@1\.0-service    u:object_r:vendor_hal_oplusSensor_default_exec:s0

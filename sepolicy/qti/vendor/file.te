@@ -24,6 +24,9 @@ type vendor_proc_engineer, fs_type, proc_type;
 type vendor_persist_fingerprint_file, file_type;
 type vendor_proc_fingerprint, fs_type, proc_type;
 
+# Reserve
+type vendor_reserve_file, file_type;
+
 # Sensors
 type vendor_proc_eng_cali_file, fs_type, proc_type;
 type vendor_proc_oplus_als_file, fs_type, proc_type;
