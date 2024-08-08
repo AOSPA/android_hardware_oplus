@@ -38,3 +38,6 @@ vendor.touchdaemon.          u:object_r:vendor_oplus_touch_prop:s0
 # WCNSS
 ro.vendor.vold.serialno    u:object_r:vendor_vold_prop:s0
 vendor.vold.serialno       u:object_r:vendor_vold_prop:s0
+
+# Widevine
+vendor.wvm.disable_l1    u:object_r:vendor_wvmkiller_prop:s0
