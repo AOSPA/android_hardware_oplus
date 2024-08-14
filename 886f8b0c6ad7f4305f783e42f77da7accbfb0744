@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a07a7c5c_4d32c6f1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000498
+      },
+      "writtenOn": "2024-08-14T17:33:58Z",
+      "side": 1,
+      "message": "Constantly crashes and introduce a neverallow, clearly haven\u0027t even been tested when it has been merged on LineageOS",
+      "revId": "886f8b0c6ad7f4305f783e42f77da7accbfb0744",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
